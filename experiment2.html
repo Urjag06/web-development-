@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Text Formatting Tags Reference</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .example-output {
+            font-family: monospace;
+            background-color: #f9f9f9;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .deprecated {
+            color: #ff0000;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Text Formatting Tags Reference</h1>
+    <p>HTML provides several tags for formatting text to improve its appearance and convey semantic meaning. This page lists the most common and currently supported tags.</p>
+
+    <h2>Semantic and Physical Tags</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Example Code</th>
+                <th>Rendered Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>`&lt;b&gt;`</td>
+                <td>Defines bold text, without any extra importance (physical tag, for stylistic purposes).</td>
+                <td>`&lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt; text.&lt;/p&gt;`</td>
+                <td class="example-output"><p>This is <b>bold</b> text.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;strong&gt;`</td>
+                <td>Defines important text (logical tag, adds semantic importance). Typically displayed in bold.</td>
+                <td>`&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;`</td>
+                <td class="example-output"><p>This is <strong>important</strong> text.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;i&gt;`</td>
+                <td>Defines a part of text in an alternate voice or mood (physical tag, e.g., technical terms, foreign phrases).</td>
+                <td>`&lt;p&gt;This is &lt;i&gt;italic&lt;/i&gt; text.&lt;/p&gt;`</td>
+                <td class="example-output"><p>This is <i>italic</i> text.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;em&gt;`</td>
+                <td>Defines emphasized text (logical tag, adds semantic emphasis). Typically displayed in italics.</td>
+                <td>`&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;`</td>
+                <td class="example-output"><p>This is <em>emphasized</em> text.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;mark&gt;`</td>
+                <td>Defines marked or highlighted text with a background color.</td>
+                <td>`&lt;p&gt;Don't forget to buy &lt;mark&gt;milk&lt;/mark&gt;.&lt;/p&gt;`</td>
+                <td class="example-output"><p>Don't forget to buy <mark>milk</mark>.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;small&gt;`</td>
+                <td>Defines smaller text.</td>
+                <td>`&lt;p&gt;This is &lt;small&gt;smaller&lt;/small&gt; text.&lt;/p&gt;`</td>
+                <td class="example-output"><p>This is <small>smaller</small> text.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;del&gt;`</td>
+                <td>Defines text that has been deleted from a document. Browsers usually strike a line through the text.</td>
+                <td>`&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;`</td>
+                <td class="example-output"><p>My favorite color is <del>blue</del> red.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;ins&gt;`</td>
+                <td>Defines a text that has been inserted into a document. Browsers usually underline the text.</td>
+                <td>`&lt;p&gt;My favorite color is blue &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;`</td>
+                <td class="example-output"><p>My favorite color is blue <ins>red</ins>.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;sub&gt;`</td>
+                <td>Defines subscripted text (appears half a character below the normal line), commonly used for chemical formulas.</td>
+                <td>`&lt;p&gt;The chemical formula for water is H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;`</td>
+                <td class="example-output"><p>The chemical formula for water is H<sub>2</sub>O.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;sup&gt;`</td>
+                <td>Defines superscripted text (appears half a character above the normal line), commonly used for exponents or footnotes.</td>
+                <td>`&lt;p&gt;E = mc&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;`</td>
+                <td class="example-output"><p>E = mc<sup>2</sup>.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;u&gt;`</td>
+                <td>Defines text that is unarticulated and styled differently from normal text (e.g., misspelled words), typically underlined.</td>
+                <td>`&lt;p&gt;This is &lt;u&gt;underlined&lt;/u&gt; text.&lt;/p&gt;`</td>
+                <td class="example-output"><p>This is <u>underlined</u> text.</p></td>
+            </tr>
+            <tr>
+                <td>`&lt;s&gt;`</td>
+                <td>Defines text that is no longer correct or relevant (similar to `&lt;del&gt;`, but without the same semantic meaning as a content change).</td>
+                <td>`&lt;p&gt;The price was &lt;s&gt;$100&lt;/s&gt; $75.&lt;/p&gt;`</td>
+                <td class="example-output"><p>The price was <s>$100</s> $75.</p></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Deprecated Tags (Not Supported in HTML5)</h2>
+    <p>The following tags are no longer supported in HTML5. Use CSS for styling instead.</p>
+
+    <ul>
+        <li><span class="deprecated">`&lt;big&gt;`</span>: Used to make text one font size larger.</li>
+        <li><span class="deprecated">`&lt;strike&gt;`</span>: Used to add a horizontal line through text (use `&lt;del&gt;` or `&lt;s&gt;` instead).</li>
+        <li><span class="deprecated">`&lt;tt&gt;`</span>: Used for teletype or monospaced text (use CSS with `font-family: monospace;` or semantic tags like `&lt;code&gt;` or `&lt;kbd&gt;` instead).</li>
+        <li><span class="deprecated">`&lt;font&gt;`</span>: Used to specify font size, color, and face.</li>
+    </ul>
+
+</body>
+</html>
